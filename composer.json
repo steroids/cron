@@ -1,0 +1,13 @@
+{
+    "name": "steroids/cron",
+    "description": "",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.4",
+        "steroids/core": "*",
+        "mtdowling/cron-expression": "1.2.3"
+    },
+    "autoload": {
+        "psr-4": {"steroids\\cron\\": ""}
+    }
+}
