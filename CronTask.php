@@ -47,6 +47,6 @@ class CronTask extends BaseObject
 
     public function run()
     {
-        call_user_func($this->handler, $this->args);
+        call_user_func($this->handler, ...$this->args);
     }
 }
