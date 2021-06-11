@@ -5,7 +5,7 @@
     "require": {
         "php": ">=7.4",
         "steroids/core": "*",
-        "mtdowling/cron-expression": "1.2.3"
+        "dragonmantank/cron-expression": "^3.1"
     },
     "autoload": {
         "psr-4": {"steroids\\cron\\": ""}

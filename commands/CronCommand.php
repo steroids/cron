@@ -18,7 +18,7 @@ class CronCommand extends Controller
             if (!empty($ids) && !in_array($task->id, $ids)) {
                 continue;
             }
-            if (CronExpression::factory($task->expression)->isDue()) {
+            if ((new CronExpression($task->expression))->isDue()) {
                 $task->run();
             }
         }
